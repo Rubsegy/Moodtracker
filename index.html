@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>¿Cómo te sientes hoy?</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <h1>¿Cómo te sientes hoy?</h1>
+
+  <div id="moods">
+    <button data-estado="feliz">😊</button>
+    <button data-estado="cansado">😴</button>
+    <button data-estado="estresado">😖</button>
+    <button data-estado="tranquilo">😌</button>
+    <button data-estado="motivado">💪</button>
+  </div>
+
+  <hr>
+
+  <label>Desde:<input type="date" id="desde"></label>
+  <label>Hasta:<input type="date" id="hasta"></label>
+  <button id="filtrar">Ver resumen</button>
+
+  <canvas id="grafico" width="320" height="320"></canvas>
+
+  <script src="app.js"></script>
+</body>
+</html>
